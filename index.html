@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="SimpleApp">
+<head>
+<meta charset="UTF-8">
+	<link href="css/bootstrap-3.3.4-dist/css/bootstrap.css" rel="stylesheet">
+	<script src="js/angular.min.js"></script>
+	<script src="js/angular-route.js"></script>
+	<script src="js/simpleapp.js"></script>
+	<script src="js/controllers.js"></script>
+</head>
+
+<body ng-controller="SimpleController">
+<div class="container-fluid">
+
+	<div class="row">
+		<div class="col-md-12"><a href="#/page1">Page 1</a> |
+			<a href="#/page2">Page 2</a> |
+			<a href="#/page3">Page 3</a>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-12">
+			<p>Simple AngularJS app using the ngRoute module and
+				$routeProvider to define templates and controllers to
+				load based on the requested URL hash fragment
+				(e.g. /index.html#/page2, where /page2 is the fragment)
+	<div ng-view></div>
+</div>
+
+</div>
+</body>
+</html>
