@@ -1,0 +1,15 @@
+<div class="row" ng-controller="Page2Controller">
+  <p>This is page 2 content: Nested views for page 2 are nested below
+  following the submenu:</p>
+  
+  	<div class="row">
+		<div class="col-md-12">
+                    <a ui-sref="page2.nested1">Nested view 1</a> |
+                    <a ui-sref="page2.nested2">Nested view 2</a> |
+                    <a ui-sref="page2.nested3">Nested view 3</a>
+		</div>
+	</div>
+  
+  <div ui-view></div>
+  
+</div>
